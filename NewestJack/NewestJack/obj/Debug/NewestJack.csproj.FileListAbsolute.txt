@@ -1,0 +1,91 @@
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack.csprojResolveAssemblyReference.cache
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\MainWindow.g.cs
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\App.g.cs
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.cache
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.lref
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\NewestJack.exe.config
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\NewestJack.exe
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\NewestJack.pdb
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\MahApps.Metro.dll
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\System.Windows.Interactivity.dll
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\MahApps.Metro.pdb
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\MahApps.Metro.xml
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\MainWindow.baml
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack.g.resources
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack.Properties.Resources.resources
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.GenerateResource.Cache
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack.exe
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\NewestJack.pdb
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\App.baml
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\WebEye.Controls.Wpf.WebCameraControl.dll
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\bin\Debug\EV3MessengerLib.dll
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\PlayField.g.cs
+c:\users\job\documents\visual studio 2017\Projects\NewestJack\NewestJack\obj\Debug\PlayField.baml
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\NewestJack.exe.config
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\NewestJack.exe
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\NewestJack.pdb
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\MahApps.Metro.dll
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\System.Windows.Interactivity.dll
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\MahApps.Metro.pdb
+D:\Downloads\NewestJack\NewestJack\NewestJack\bin\Debug\MahApps.Metro.xml
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.csprojResolveAssemblyReference.cache
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\MainWindow.g.cs
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\PlayField.g.cs
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\App.g.cs
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.cache
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.lref
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\App.baml
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\MainWindow.baml
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\PlayField.baml
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.g.resources
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.Properties.Resources.resources
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.GenerateResource.Cache
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.CoreCompileInputs.cache
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.exe
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\NewestJack.pdb
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\Calibreer.g.cs
+D:\Downloads\NewestJack\NewestJack\NewestJack\obj\Debug\Calibreer.baml
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\NewestJack.exe.config
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\NewestJack.exe
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\NewestJack.pdb
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\MahApps.Metro.dll
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\System.Windows.Interactivity.dll
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\MahApps.Metro.pdb
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\bin\Debug\MahApps.Metro.xml
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.csprojResolveAssemblyReference.cache
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\MainWindow.g.cs
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\PlayField.g.cs
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\App.g.cs
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.cache
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.lref
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\App.baml
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\MainWindow.baml
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\PlayField.baml
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.g.resources
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.Properties.Resources.resources
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.GenerateResource.Cache
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.CoreCompileInputs.cache
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.exe
+D:\Downloads\NewestJack - Copy\NewestJack\NewestJack\obj\Debug\NewestJack.pdb
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\NewestJack.exe.config
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\NewestJack.exe
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\NewestJack.pdb
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\MahApps.Metro.dll
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\MahApps.Metro.pdb
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\bin\Debug\MahApps.Metro.xml
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.csprojResolveAssemblyReference.cache
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\MainWindow.g.cs
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\PlayField.g.cs
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\App.g.cs
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.cache
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack_MarkupCompile.lref
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\App.baml
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\MainWindow.baml
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\PlayField.baml
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.g.resources
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.Properties.Resources.resources
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.GenerateResource.Cache
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.csproj.CoreCompileInputs.cache
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.exe
+C:\Users\miche\Downloads\NewestJack (2)\NewestJack\NewestJack\obj\Debug\NewestJack.pdb

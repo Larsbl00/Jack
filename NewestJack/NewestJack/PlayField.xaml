@@ -1,0 +1,59 @@
+﻿<Controls:MetroWindow x:Class="NewestJack.PlayField"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewestJack" Tag="1"
+        mc:Ignorable="d" WindowStartupLocation="Manual"
+        Title="Jack" Height="1000" Width="1000" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="lboxPlayers" SelectionChanged="lboxPlayers_SelectionChanged" BorderBrush="DarkRed" BorderThickness="0,0,1,0">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="IsHitTestVisible" Value="False"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Padding="5,0,5,0" Text="{Binding Name}" FontSize="32"/>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Score}" FontSize="22" />
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin="32">
+                <Label Name="labPlayerName" HorizontalAlignment="Right" FontSize="48"></Label>
+                <Label Name="labPlayerScore" HorizontalAlignment="Right" FontSize="36"></Label>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Margin="32">
+                <Label Name="labJackName" FontSize="48">Jack</Label>
+                <Label Name="labJackScore" FontSize="36">20</Label>
+            </StackPanel>
+
+            <Button Click="butHit_Click" Grid.Column="0" Grid.Row="1" Name="butHit" FontSize="36" Margin="32">
+                Hit
+            </Button>
+            <Button Click="butPass_Click" Grid.Column="1" Grid.Row="1" FontSize="36" Name="butPass" Margin="32">
+                Pass
+            </Button>
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>

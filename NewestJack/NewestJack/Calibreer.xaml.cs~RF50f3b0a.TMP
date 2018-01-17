@@ -1,0 +1,475 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Forms;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using WebEye.Controls.Wpf;
+
+namespace NewestJack
+{
+    /// <summary>
+    /// Interaction logic for Calibreer.xaml
+    /// </summary>
+    public partial class Calibreer : Window
+    {
+        int vlak1 = 250;
+        int vlak2 = 575;
+        int y = 200;
+
+        public Calibreer()
+        {
+            InitializeComponent();
+
+
+            comboCam.ItemsSource = webCam.GetVideoCaptureDevices();
+        }
+
+        private void comboCam_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                var cameraId = (WebCameraId)comboCam.SelectedItem;
+                webCam.StartCapture(cameraId);
+            }
+            catch
+            {
+                System.Windows.MessageBox.Show("ZULUL");
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Controls.Button b = sender as System.Windows.Controls.Button;
+
+            //Bitmap bm = webCam.GetCurrentImage();
+
+            //System.Drawing.Color c = bm.GetPixel(vlak1, y);
+            //string color0 = c.R + "," + c.G + "," + c.B;
+
+            //System.Drawing.Color c1 = bm.GetPixel(vlak2, y);
+            //string color1 = c1.R + "," + c1.G + "," + c1.B;
+
+            //Properties.Settings.Default["Card" + b.Content.ToString()] = color0 + "|" + color1;
+
+            //Properties.Settings.Default.Save();
+
+            //System.Windows.MessageBox.Show(Properties.Settings.Default["Card" + b.Content.ToString()].ToString());
+
+            //BitmapData srcData = bm.LockBits(
+            //new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+            //ImageLockMode.ReadOnly,
+            //System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+            //int stride = srcData.Stride;
+
+            //IntPtr Scan0 = srcData.Scan0;
+
+            //long[] totals = new long[] { 0, 0, 0 };
+
+            //int width = bm.Width;
+            //int height = bm.Height;
+
+            //unsafe
+            //{
+            //    byte* p = (byte*)(void*)Scan0;
+
+            //    for (int y = 0; y < height; y++)
+            //    {
+            //        for (int x = 0; x < width; x++)
+            //        {
+            //            for (int color = 0; color < 3; color++)
+            //            {
+            //                int idx = (y * stride) + x * 4 + color;
+
+            //                totals[color] += p[idx];
+            //            }
+            //        }
+            //    }
+            //}
+
+            //int avgB = Convert.ToInt32( totals[0]) / (width * height);
+            //int avgG = Convert.ToInt32(totals[1]) / (width * height);
+            //int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+            //System.Windows.MessageBox.Show(avgB.ToString() +"," + avgG.ToString() + "," + avgR.ToString());
+
+            //Properties.Settings.Default["Card1"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+            //System.Windows.MessageBox.Show(Properties.Settings.Default["Card1"].ToString());
+
+            if (b.Content.ToString() == "1")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                BitmapData srcData = bm.LockBits(
+            new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+            ImageLockMode.ReadOnly,
+            System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card1"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card1"].ToString());
+            }
+            else if (b.Content.ToString() == "2")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+                BitmapData srcData = bm.LockBits(
+                            new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+                            ImageLockMode.ReadOnly,
+                            System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card2"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card2"].ToString());
+            }
+            else if (b.Content.ToString() == "3")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                BitmapData srcData = bm.LockBits(
+            new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+            ImageLockMode.ReadOnly,
+            System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card3"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card3"].ToString());
+            }
+            else if (b.Content.ToString() == "4")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                BitmapData srcData = bm.LockBits(
+            new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+            ImageLockMode.ReadOnly,
+            System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card4"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card4"].ToString());
+            }
+            else if (b.Content.ToString() == "5")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                BitmapData srcData = bm.LockBits(
+                new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+                ImageLockMode.ReadOnly,
+                System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card5"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card5"].ToString());
+            }
+            else if (b.Content.ToString() == "6")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                BitmapData srcData = bm.LockBits(
+                new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+                ImageLockMode.ReadOnly,
+                System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card6"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card6"].ToString());
+            }
+            else if (b.Content.ToString() == "7")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                BitmapData srcData = bm.LockBits(
+                new System.Drawing.Rectangle(0, 0, bm.Width, bm.Height),
+                ImageLockMode.ReadOnly,
+                System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                int stride = srcData.Stride;
+
+                IntPtr Scan0 = srcData.Scan0;
+
+                long[] totals = new long[] { 0, 0, 0 };
+
+                int width = bm.Width;
+                int height = bm.Height;
+
+                unsafe
+                {
+                    byte* p = (byte*)(void*)Scan0;
+
+                    for (int y = 0; y < height; y++)
+                    {
+                        for (int x = 0; x < width; x++)
+                        {
+                            for (int color = 0; color < 3; color++)
+                            {
+                                int idx = (y * stride) + x * 4 + color;
+
+                                totals[color] += p[idx];
+                            }
+                        }
+                    }
+                }
+
+                int avgB = Convert.ToInt32(totals[0]) / (width * height);
+                int avgG = Convert.ToInt32(totals[1]) / (width * height);
+                int avgR = Convert.ToInt32(totals[2]) / (width * height);
+
+                System.Windows.MessageBox.Show(avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString());
+
+                Properties.Settings.Default["Card7"] = avgB.ToString() + "," + avgG.ToString() + "," + avgR.ToString();
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card7"].ToString());
+            }
+            else if (b.Content.ToString() == "8")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                System.Drawing.Color c = bm.GetPixel(vlak1, y);
+                string color0 = c.R + "," + c.G + "," + c.B;
+
+                System.Drawing.Color c1 = bm.GetPixel(vlak2, y);
+                string color1 = c1.R + "," + c1.G + "," + c1.B;
+
+                Properties.Settings.Default["Card8"] = color0 + "|" + color1;
+
+                Properties.Settings.Default.Save();
+
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card8"].ToString());
+            }
+            else if (b.Content.ToString() == "9")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                System.Drawing.Color c = bm.GetPixel(vlak1, y);
+                string color0 = c.R + "," + c.G + "," + c.B;
+
+                System.Drawing.Color c1 = bm.GetPixel(vlak2, y);
+                string color1 = c1.R + "," + c1.G + "," + c1.B;
+
+                Properties.Settings.Default["Card9"] = color0 + "|" + color1;
+
+                Properties.Settings.Default.Save();
+
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card9"].ToString());
+            }
+            else if (b.Content.ToString() == "10")
+            {
+                Bitmap bm = webCam.GetCurrentImage();
+
+                System.Drawing.Color c = bm.GetPixel(vlak1, y);
+                string color0 = c.R + "," + c.G + "," + c.B;
+
+                System.Drawing.Color c1 = bm.GetPixel(vlak2, y);
+                string color1 = c1.R + "," + c1.G + "," + c1.B;
+
+                Properties.Settings.Default["Card10"] = color0 + "|" + color1;
+
+                Properties.Settings.Default.Save();
+
+                System.Windows.MessageBox.Show(Properties.Settings.Default["Card10"].ToString());
+            }
+            comboCam.SelectedIndex = 0;
+        }
+    }
+}
